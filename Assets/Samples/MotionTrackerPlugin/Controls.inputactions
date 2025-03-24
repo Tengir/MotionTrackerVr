@@ -1,0 +1,106 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Main",
+            "id": "7741591a-e010-48c2-a42b-ba93cd55de50",
+            "actions": [
+                {
+                    "name": "RecordRightGesture",
+                    "type": "Button",
+                    "id": "574d34c3-5fff-4144-b70b-d4f9bca04c4d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RecordLeftGesture",
+                    "type": "Button",
+                    "id": "62d756d3-4327-4ccb-a618-27dccd720500",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SaveRightGesture",
+                    "type": "Button",
+                    "id": "dfcac241-beea-4457-85ad-7056ed57f396",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "eef779ed-12c7-4dbb-bb0f-6bc9ef5bebf2",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "cf61eac6-ca44-4e58-8cf5-d4267ac5df56",
+                    "path": "<XRController>{RightHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XRControllers",
+                    "action": "RecordRightGesture",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4acd1bbe-7f0f-4f87-8954-2838ec5ab875",
+                    "path": "<XRController>{LeftHand}/{TriggerButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XRControllers",
+                    "action": "RecordLeftGesture",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "69c3ba74-1ef0-4f55-baf3-a57e11d1ef7c",
+                    "path": "<XRController>{RightHand}/{Primary2DAxis}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "533a0d9b-e438-4aec-abc9-6e81b328049e",
+                    "path": "<XRController>{RightHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";XRControllers",
+                    "action": "SaveRightGesture",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "XRControllers",
+            "bindingGroup": "XRControllers",
+            "devices": [
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
